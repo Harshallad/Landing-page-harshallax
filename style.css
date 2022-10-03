@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*{
+    background-color: #e8e8e4;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color:#e8e8e4;
+}
+.nav ul{
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    width: 20%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 40%;
+    background-color: #e8e8e4;
+
+}
+.nav a{
+    color: #4e5358;
+    text-decoration: none;
+    font-weight: 200;
+}
+.nav a:hover{
+    color:#adb5bd;
+}
+
+.name h1{
+    font-family: 'Mr Dafoe', cursive;
+    font-weight: 100;
+    font-size: 10rem;
+    margin-top: 10%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    animation: slide_up 1s cubic-bezier(0, 0.1, 0.12, 0.99) 0s 1 normal forwards running;
+    position: relative;
+    z-index: 1;
+}
+.block1{
+    width: 80%;
+    height: 150px;
+    position: fixed;
+    z-index: 1;
+}
+.subhead h2{
+    font-family: 'Catamaran', sans-serif;
+    font-size: 2rem;
+    margin-top: 10px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    animation: slide_up 1s cubic-bezier(0, 0.1, 0.12, 0.99) 0s 1 normal forwards running;
+    z-index: 1;
+    position: relative;
+}
+.block2{
+    width: 80%;
+    height: 150px;
+    position: fixed;
+    z-index: 1;
+} 
+@keyframes slide_up{
+    0%{
+        transform: translateY(160px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
